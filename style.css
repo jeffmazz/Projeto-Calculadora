@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#calculator {
+    width: 360px;
+    background-color: black;
+    margin: 50px auto;
+    padding: 30px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#time {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 15px;
+    color: #A4A1A2;
+    
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
+#visor {
+    width: 90%;
+    height: 80px;
+    margin: 10px auto 20px auto;
+    border: 3px double white;
+    padding: 0 4px 0 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    font-size: 25pt;
+    overflow: hidden;
+}
+
+.visorFirstLine, .visorSecondLine {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    height: 35px;
+    color: white;
+}
+
+#op {
+    margin: 0 3.2px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.buttons div {
+    display: flex;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.line div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 73px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.number, #point {
+    background-color: rgb(59,59,59);
+    color: white;
+}
+
+.number:hover, #point:hover {
+    background-color: rgb(50,50,50);
+}
+
+.operator, #minus, #clean, #cleanOne, #percentage, #cleanCurrentNumber {
+    background-color: rgb(50,50,50);
+    color: white;
+}
+
+.operator:hover, #minus:hover, #clean:hover, #cleanOne:hover, #percentage:hover, #cleanCurrentNumber:hover {
+    background-color: rgb(59,59,59);
+}
+
+#equal {
+    background-color: rgb(132,131,129);
+    color: black;
+}
+
